@@ -15,5 +15,5 @@ SELECT
     publisher,
     skin_color,
     alignment,
-    weight
+    NULLIF(weight, -99) AS weight
 FROM {{ source('tutorial', 'superheroes') }}
