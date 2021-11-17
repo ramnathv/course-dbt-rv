@@ -16,7 +16,32 @@ sources:
       error_after: {count: 48, period: hour}
 
     tables:
+      - name: addresses
+        description: Contains addresses
+
+      - name: events
+        description: 
+          Contains information about each event
+
+      - name: order_items
+        description: 
+          Contains information about each order item
+
+      - name: orders
+        description: 
+          Contains information about each order
+
+      - name: products
+        description: 
+          Contains information  about each product
+
+      - name: promos
+        description: Contains information about each promo
+
       - name: superheroes
         loaded_at_field: created_at
         description:
           Contains demographic information about each superhero.
+          
+      - name: users
+        description: Contains information about each user.
