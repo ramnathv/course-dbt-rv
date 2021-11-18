@@ -4,149 +4,156 @@ models:
   description: ''
   columns:
   - name: id
-    description: ''
+    description: 'The unique id'
   - name: address_id
-    description: ''
+    description: 'The unique address id'
   - name: address
-    description: ''
+    description: 'The adderss'
   - name: zipcode
-    description: ''
+    description: 'The zipcode'
   - name: state
-    description: ''
+    description: 'The state'
   - name: country
-    description: ''
+    description: 'The country'
+
 - name: stg_events
-  description: ''
+  description: 'Contains information about each event'
   columns:
   - name: id
-    description: ''
+    description: 'The unique id'
   - name: event_id
-    description: ''
+    description: 'The unique identifier for the event.'
   - name: session_id
-    description: ''
+    description: 'The unique identifier for the session.'
   - name: user_id
-    description: ''
+    description: 'The unique identifier for the user.'
   - name: page_url
-    description: ''
+    description: 'The url of the page.'
   - name: created_at
-    description: ''
+    description: 'The timestamp when the entry was created.'
   - name: event_type
-    description: ''
+    description: 'The type of event'
+
 - name: stg_order_items
-  description: ''
+  description: 'Contains information about each order item.'
   columns:
   - name: id
-    description: ''
+    description: 'The unique id.'
   - name: order_id
-    description: ''
+    description: 'The unique identifier of the order.'
   - name: product_id
-    description: ''
+    description: 'The unique identifier of the product.'
   - name: quantity
-    description: ''
+    description: 'The quantity ordered.'
+
 - name: stg_orders
-  description: ''
+  description: 'Contains information about each order.'
   columns:
   - name: id
-    description: ''
+    description: 'The unique id.'
   - name: order_id
-    description: ''
+    description: 'The unique identifier of each order.'
   - name: user_id
-    description: ''
+    description: 'The unique identifier of each user.'
   - name: promo_id
-    description: ''
+    description: 'The unique identifier of each promo.'
   - name: address_id
-    description: ''
+    description: 'The unique identifier of each address.'
   - name: created_at
-    description: ''
+    description: 'The timestamp when the entry was created.'
   - name: order_cost
-    description: ''
+    description: 'The cost of the order.'
   - name: shipping_cost
-    description: ''
+    description: 'The shipping cost of the order.'
   - name: order_total
-    description: ''
+    description: 'The total cost of the order.'
   - name: tracking_id
-    description: ''
+    description: 'The unique identifier to track the order'
   - name: shipping_service
-    description: ''
+    description: 'The shipping service used.'
   - name: estimated_delivery_at
-    description: ''
+    description: 'A timestamp when the delivery is estimated to be made.'
   - name: delivered_at
-    description: ''
+    description: 'A timesamp when the delivery is actually made.'
   - name: status
-    description: ''
+    description: 'The status of the order.'
+
 - name: stg_products
-  description: ''
+  description: 'Contains information about each product.'
   columns:
   - name: id
-    description: ''
+    description: 'The unique id.'
   - name: product_id
-    description: ''
+    description: 'The unique identifier for each product.'
   - name: name
-    description: ''
+    description: 'The name of the product.'
   - name: price
-    description: ''
+    description: 'The price of the product.'
   - name: quantity
-    description: ''
+    description: 'The quantity of product.'
+
 - name: stg_promos
-  description: ''
+  description: 'Contains information about each promo.'
   columns:
   - name: id
-    description: ''
+    description: 'The unique id.'
   - name: promo_id
-    description: ''
+    description: 'The unique identifier of each promo.'
   - name: discount
-    description: ''
+    description: 'The discount offered in the promo.'
   - name: status
-    description: ''
+    description: 'The status of the promo'
+
 - name: stg_superheroes
-  description: ''
+  description: 'Containst information about each superhero.'
   columns:
   - name: superhero_id
-    description: ''
+    description: 'The unique identifier for each superhero.'
   - name: name
-    description: ''
+    description: 'The name of the superhero.'
     tests:
       - not_null
   - name: gender
-    description: ''
+    description: 'The gender of the superhero.'
   - name: eye_color
-    description: ''
+    description: 'The eye color of the superhero.'
   - name: race
-    description: ''
+    description: 'The race of the superhero.'
   - name: hair_color
-    description: ''
+    description: 'The hair color of the superhero.'
   - name: height
     description: 'The height of the superhero.'
     tests:
       - positive_values
   - name: publisher
-    description: ''
+    description: 'The publisher.'
   - name: skin_color
-    description: ''
+    description: 'The skin color of the superhero.'
   - name: alignment
-    description: ''
+    description: 'The alignment'
   - name: weight
     description: 'The weight of the superhero.'
     tests:
       - positive_values
+
 - name: stg_users
-  description: ''
+  description: 'Contains information about each user.'
   columns:
   - name: id
-    description: ''
+    description: 'The unique id.'
   - name: user_id
-    description: ''
+    description: 'The unique identifier for each user.'
   - name: first_name
-    description: ''
+    description: 'The first name of the user.'
   - name: last_name
-    description: ''
+    description: 'The last name of the user.'
   - name: email
-    description: ''
+    description: 'The email of the user.'
   - name: phone_number
-    description: ''
+    description: 'The phone nuber of the user.'
   - name: created_at
-    description: ''
+    description: 'A timestamp when the entry was created.'
   - name: updated_at
-    description: ''
+    description: 'A timestamp when the entry was updated.'
   - name: address_id
-    description: ''
+    description: 'The unique identifier for the address.'
