@@ -105,6 +105,8 @@ models:
     description: ''
   - name: name
     description: ''
+    tests:
+      - not_null
   - name: gender
     description: ''
   - name: eye_color
@@ -114,7 +116,9 @@ models:
   - name: hair_color
     description: ''
   - name: height
-    description: ''
+    description: 'The height of the superhero.'
+    tests:
+      - positive_values
   - name: publisher
     description: ''
   - name: skin_color
@@ -122,7 +126,9 @@ models:
   - name: alignment
     description: ''
   - name: weight
-    description: ''
+    description: 'The weight of the superhero.'
+    tests:
+      - positive_values
 - name: stg_users
   description: ''
   columns:
